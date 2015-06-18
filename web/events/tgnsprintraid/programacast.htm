@@ -1,0 +1,313 @@
+<html>
+<head>
+<title>Aire Lliure - Activitats Outdoor :::</title>
+<meta NAME="keywords" CONTENT="Aire Lliure, Raids, Aventura, Tarragona, Catalunya, Orienteering, Adventure races, Activitats Outdoor, Adventure">
+<meta NAME="description" CONTENT="Events esportius i activitats outdoor. 
+Orienteering | Trail running | MTB | Climbing | Adventure races & travels
+Multiactivites | Triathlon | Duathlon | Rogaining | Alpinism | Mountain guide services 
+
+Gestionem, de manera innovadora i creativa, les activitats del teu club esportiu amb convicció d'èxit. La nostra experiència avala eficiència i solidesa organitzativa.">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+<meta NAME="robots" CONTENT="all">
+
+
+<link rel="stylesheet" href="../../css/fullestils.css" type="text/css">
+
+<script language="javascript" type="text/javascript">    
+
+function MostrarFecha()   
+   {   
+   var nombres_dias = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado")   
+   var nombres_meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")   
+  
+   var fecha_actual = new Date()   
+  
+   dia_mes = fecha_actual.getDate()     //dia del mes   
+   dia_semana = fecha_actual.getDay()       //dia de la semana   
+   mes = fecha_actual.getMonth() + 1   
+   anio = fecha_actual.getFullYear()   
+  
+   //escribe en pagina   
+   document.write(nombres_dias[dia_semana] + ", " + dia_mes + " de " + nombres_meses[mes - 1] + " de " + anio)   
+   }   
+  
+</script>
+
+<script type="text/javascript">
+
+
+var current="Sortida!"	
+var year=2012     
+var month=8        
+var day=27       
+var hour=06        
+var minute=00      
+var tz=1          
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countdown(yr,m,d,hr,min){
+theyear=yr;themonth=m;theday=d;thehour=hr;theminute=min
+    var today=new Date()
+    var todayy=today.getYear()
+    if (todayy < 1000) {todayy+=1900}
+    var todaym=today.getMonth()
+    var todayd=today.getDate()
+    var todayh=today.getHours()
+    var todaymin=today.getMinutes()
+    var todaysec=today.getSeconds()
+    var todaystring1=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+    var todaystring=Date.parse(todaystring1)+(tz*1000*60*60)
+    var futurestring1=(montharray[m-1]+" "+d+", "+yr+" "+hr+":"+min);
+    var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
+    var dd=futurestring-todaystring
+    var dday=Math.floor(dd/(60*60*1000*24)*1)
+    var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+    var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+    var dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+    if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=0){
+        document.getElementById('count2').innerHTML=current;
+        document.getElementById('count2').style.display="inline";
+        document.getElementById('count2').style.width="390px";
+        document.getElementById('dday').style.display="none";
+        document.getElementById('dhour').style.display="none";
+        document.getElementById('dmin').style.display="none";
+        document.getElementById('dsec').style.display="none";
+        document.getElementById('days').style.display="none";
+        document.getElementById('hours').style.display="none";
+        document.getElementById('minutes').style.display="none";
+        document.getElementById('seconds').style.display="none";
+        document.getElementById('spacer1').style.display="none";
+        document.getElementById('spacer2').style.display="none";
+        return;
+    }
+    else {
+        document.getElementById('count2').style.display="none";
+        document.getElementById('dday').innerHTML=dday;
+        document.getElementById('dhour').innerHTML=dhour;
+        document.getElementById('dmin').innerHTML=dmin;
+        document.getElementById('dsec').innerHTML=dsec;
+        setTimeout("countdown(theyear,themonth,theday,thehour,theminute)",1000);
+    }
+}
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+</head>
+
+<body bgcolor="#FFFFFF" background="img/fonsweblanc.jpg" text="#000000" link="#CCFF00" vlink="#FFFFFF" style="background-repeat: no-repeat; background-attachment:fixed; margin:0px" onload="countdown(year,month,day,hour,minute)">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td> <div align="center"> 
+<table width="900" height="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td height="19" bgcolor="#000000" class="lletres"> 
+<div align="right"> 
+                <table width="99%" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr> 
+                    <td width="50%" id="links1" valign="top"><a href="../../index.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','../../img/logoairepetitcolor.gif',1)"><img src="../../img/logoairepetitgrey.gif" name="Image9" width="119" height="15" border="0" align="absmiddle"></a>&nbsp;&nbsp;&nbsp;<a href="../../inicio.htm">Inicio</a><font color="#666666" size="1"> 
+                      |</font> <a href="../../calendario.htm">Calendario</a> <font color="#666666" size="1">|</font> 
+                      <a href="../../archivo.htm">Archivo</a> <font color="#666666" size="1">|</font> 
+                      <a href="../../airelliurecast.htm">Aire Lliure </a>&nbsp; 
+                    </td>
+                    <td width="34%"> <div align="right" id="links2"><span class="SeparadorsIdiomes"><a href="programacast.htm"><font color="#CCFF00">ES</font></a> 
+                        | <a href="programa.htm">CAT</a> &nbsp; </span></div></td>
+                  </tr>
+                </table>
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="150"><img src="img/frontal.jpg" width="900" height="200"></td>
+          </tr>
+          <tr> 
+            <td height="18"><table width="100%" height="25" border="0" cellpadding="0" cellspacing="2" background="../../img/fonslinks.jpg" bgcolor="#000000">
+<tr> 
+                  <td width="683"> 
+<table width="665" height="50" border="0" cellpadding="0" cellspacing="2">
+<tr> 
+                        <td width="91"> 
+<div align="center"><span id="linksblau"><a href="indexcast.htm">Novedades</a></span></div></td>
+                        <td width="10"> 
+                          <div align="center"><span class="Separadors" id="linksblau"><font size="2">|</font></span></div></td>
+                        <td width="94"> 
+                          <div align="center"><span id="linksblau"><a href="presentaciocast.htm">Presentaci&oacute;n</a></span></div></td>
+                        <td width="13"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span><span id="linksblau"></span></div></td>
+                        <td width="81"> 
+                          <div align="center"><span id="linksblau"><a href="programacast.htm"><font color="#0033FF">Programa</font></a></span></div></td>
+                        <td width="17"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span></div></td>
+                        <td width="132"> 
+                          <div align="center"><span id="linksblau"><a href="informaciocast.htm">Informaci&oacute;n 
+                            t&eacute;cnica</a></span><span class="Separadors" id="linksvermell"></span></div></td>
+                        <td width="21"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span></div></td>
+                        <td width="98"> 
+                          <div align="center"><span id="linksblau"><a href="inscripcionscast.htm">Inscripciones</a></span></div></td>
+                        <td width="11"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span></div></td>
+                        <td width="73"> 
+                          <div align="center"><span id="linksblau"><a href="galeriacast.htm">Galeria</a></span></div></td>
+                      </tr>
+                    </table></td>
+                  <td width="211" valign="bottom"> 
+                    <div align="right"><span class="lletres">&nbsp; 
+                      <!-- Para que muestre la fecha -->
+                      <script language="JavaScript" type="text/javascript">  MostrarFecha();   
+</script>
+                      &nbsp; &nbsp; </span></div></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td height="4" bgcolor="#0033FF"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#FFFFFF"> <table width="900" border="0" cellspacing="0" cellpadding="8">
+                <tr> 
+                  <td width="654" valign="top">
+<table width="99%" border="0" align="center" cellpadding="10" cellspacing="0">
+                      <tr> 
+                        <td background="img/fons.jpg" valign="top"> <p><span class="T&iacute;tolsNoticies" id="LinksNoticies"><font color="#CCCCCC" size="5">Programa</font> 
+                            </span></p>
+                          <p><span class="LletresNegres"> </span> </p>
+                          <p class="Texte" id="links2"><strong><u>Viernes 24 de Agosto 2012, </u></strong><u>Refugi 
+                            n&ordm;1 Moll de Costa, Port de Tarragona</u></p>
+                          <table width="92%" border="0" align="center" cellpadding="2" cellspacing="2">
+                            <tr> 
+                              <td width="41" height="20" class="Texte"> <div align="center">Hora</div></td>
+                              <td width="489" height="20" class="Texte">Observaciones</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="41" class="Texte"> <div align="center">18:00</div></td>
+                              <td width="489" class="Texte"><strong>Apertura</strong> 
+                                recepci&oacute;n de corredores (TODAS CATEGORIAS) 
+                                - Verificaci&oacute;n material obligatorio - Entrega 
+                                de documentaci&oacute;n. </td>
+                            </tr>
+                            <tr bgcolor="#E9E9E9"> 
+                              <td width="41" class="Texte"> <div align="center">24:00</div></td>
+                              <td width="489" bgcolor="#E9E9E9" class="Texte"><strong>Cierre</strong> 
+                                recepci&oacute;n de corredores (TODAS CATEGORIAS) 
+                                - Verificaci&oacute;n material obligatorio - Entrega 
+                                de documentaci&oacute;n. </td>
+                            </tr>
+                          </table>
+                         
+                          <p class="Texte"><b>Recepci&oacute;n y alojamiento de 
+                            corredores </b><br>
+                            * Dispondr&eacute;is de duchas y lavabos. Llevad vuestro 
+                            material necesario para pasar al noche.</p>
+                          <center>
+                            <iframe src="https://maps.google.es/maps/ms?msa=0&amp;msid=218144831734411613201.0004c6a85ed8f541a7b2b&amp;hl=es&amp;ie=UTF8&amp;ll=40.396764,-3.713379&amp;spn=7.829737,14.985352&amp;t=h&amp;output=embed" width="425" marginwidth="0" height="350" marginheight="0" scrolling="no" frameborder="0"></iframe>
+                            <br />
+                            <small class="Texte">Ver <a href="https://maps.google.es/maps/ms?msa=0&amp;msid=218144831734411613201.0004c6a85ed8f541a7b2b&amp;hl=es&amp;ie=UTF8&amp;ll=40.396764,-3.713379&amp;spn=7.829737,14.985352&amp;t=h&amp;source=embed" style="color:#0000FF;text-align:left">Recepció 
+                            de corredors + SUELO DURO</a> en un mapa más grande</small> 
+                          </center>
+                          <p></p>
+                          <p class="Texte">&nbsp;</p>
+                          <p class="Texte"><strong><u>S&aacute;bado 25 de Agosto 
+                            2012, </u></strong><u>Platja del Miracle (Tarragona)</u></p>
+                          <table width="92%" border="0" align="center" cellpadding="2" cellspacing="2">
+                            <tr> 
+                              <td width="41" height="20" class="Texte"> <div align="center">Hora</div></td>
+                              <td width="489" height="20" class="Texte">Observaciones</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td class="Texte"> <div align="center">06:00</div></td>
+                              <td class="Texte"><strong>Apertura</strong> recepci&oacute;n 
+                                de corredores &Eacute;LITE, SOLO y AVENTURA - 
+                                Verificaci&oacute;n material obligatorio - Entrega 
+                                de documentaci&oacute;n.<font color="#0000FF"><strong> 
+                                Obertura de cuarentena.</strong></font></td>
+                            </tr>
+                            <tr bgcolor="#E9E9E9"> 
+                              <td class="Texte"> <div align="center">06:45</div></td>
+                              <td bgcolor="#E9E9E9" class="Texte"><strong>Cierre 
+                                </strong> recepci&oacute;n e inicio reuni&oacute;n 
+                                t&eacute;cnica &Eacute;LITE, SOLO y AVENTURA.</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td bgcolor="#99FF99" class="Texte"> <div align="center">07:00</div></td>
+                              <td bgcolor="#99FF99" class="Texte">SALIDA &Eacute;LITE, 
+                                SOLO Y AVENTURA.</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="41" bgcolor="#E9E9E9" class="Texte"> 
+                                <div align="center">09:00</div></td>
+                              <td width="489" bgcolor="#E9E9E9" class="Texte"><strong>Apertura 
+                                </strong> recepci&oacute;n de corredores INICIACI&Oacute;N 
+                                y FAMILIAR - Verificaci&oacute;n material obligatorio 
+                                - entrega de documentaci&oacute;n.</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td class="Texte"> <div align="center">09:45</div></td>
+                              <td class="Texte"><strong>Cierre </strong> <strong> 
+                                </strong> recepci&oacute;n e inicio reuni&oacute;n 
+                                t&eacute;cnica INICIACI&Oacute;N y FAMILIAR.</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="41" bgcolor="#99FF99" class="Texte"> 
+                                <div align="center">10:00</div></td>
+                              <td width="489" bgcolor="#99FF99" class="Texte">SALIDA 
+                                INICIACI&Oacute;N Y FAMILIAR.</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="41" bgcolor="#FF9999" class="Texte"> 
+                                <div align="center">13:00</div></td>
+                              <td width="489" bgcolor="#FF9999" class="Texte">CIERRE 
+                                DE META (todas les categorias) y comer</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="41" bgcolor="#FF9999" class="Texte"> 
+                                <div align="center">13:30</div></td>
+                              <td width="489" bgcolor="#FF9999" class="Texte">Entrega 
+                                de premios sorteo de regalos</td>
+                            </tr>
+                          </table>
+						  
+						  
+						  
+                          <p class="Lletrapetita">* de 13:00h a 14:00h comida 
+                            incluida con la cuota de inscripci&oacute;n.</p>
+                          
+                          <p class="Texte">&nbsp;</p>
+                          <p class="Texte"><b>Punto de encuentro / Llegada y salida</b><br>
+                            * Dispondr&eacute;is de espacio reservado para aparcar 
+                            a partir de las 5:00h de la ma&ntilde;ana. </p>
+							<center>
+							<iframe src="http://maps.google.com/maps/ms?msa=0&amp;ie=UTF8&amp;ll=41.114793,1.26206&amp;spn=0,0&amp;t=h&amp;msid=202416614265547731905.0004aa0d610215f918ca8&amp;output=embed" width="425" marginwidth="0" height="350" marginheight="0" scrolling="no" frameborder="0"></iframe><br />
+                          <small class="Texte">View <a href="http://maps.google.com/maps/ms?msa=0&amp;ie=UTF8&amp;ll=41.114793,1.26206&amp;spn=0,0&amp;t=h&amp;msid=202416614265547731905.0004aa0d610215f918ca8&amp;source=embed" style="color:#0000FF;text-align:left">TGN 
+                          Sprint Raid</a> in a larger map</small> </center>
+						  
+						  
+                          </em></p>
+                          <p></p></td>
+                      </tr>
+                    </table></td>
+                  <td width="246" valign="top"><iframe width="246" height="1200" src="includes/logos.htm" scrolling="no" frameborder="no"></iframe>
+                  </td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td height="80" bgcolor="#FFFFFF"><div align="center"><img src="../../img/separadorgran2.gif" width="860" height="7"> 
+                <br>
+              </div>
+              <div>
+                <iframe width="100%" height="350" src="../../includes/bottom.htm" scrolling="no" frameborder="no"></iframe>
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="80" background="../../img/gespa6.gif" bgcolor="#FFFFFF"> 
+              <p>&nbsp;</p></td>
+          </tr>
+        </table>
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>

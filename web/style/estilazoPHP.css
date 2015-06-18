@@ -1,0 +1,240 @@
+﻿/*PERSONALIZACIÓN DE LAS FUENTES*/
+thead{
+	color:blue; font-weight:bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding:1px 4px 1px 4px;
+	
+}
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 6px;
+	color:black;
+}
+h2 {
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+h4 {
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 6px;
+}
+.espaciado {
+	padding: 5px;
+}
+.espacioVer {
+	padding: 10px 0px 10px;
+}
+.resaltado {
+	font-weight: bold;
+	
+}
+.error {
+	color:red;
+}
+.red {
+	color: #FF0000;
+}
+
+.recuadro{
+	border: 2px black solid;
+	border-radius: 10px;
+
+}
+.recuadro:hover {
+	border: 2px #CCFF00 solid;
+	border-radius: 10px;
+	 
+	}
+.derecha {
+	text-align: right;
+	float: right;
+}
+a {
+	text-decoration: none;
+	color: silver;
+}
+a:hover {
+	color: #CCFF00;
+}
+p a {
+	color: #666666;
+	line-height: 18px;
+}
+p a:hover {
+	color: black;
+	font-style: italic;
+}
+.flotaDer {
+	float: right;
+}
+.flotaIzq {
+	float: left;
+}
+.alinDer {
+	text-align: right;
+	display: inline;
+}
+.alinIzq {
+	text-align: left;
+	display: inline;
+}
+.letraPeq {
+	font-size: 11px;
+}
+.cuadriculado {
+	-webkit-flex-wrap: wrap; /* Safari 6.1+ */;
+	display: -webkit-flex; /* Safari */;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around; /* Safari 6.1+ */;
+	display: flex;
+	justify-content: space-around;
+}
+.inline {
+	display: inline;
+}
+.margDer{
+	 margin-right:20px;
+}
+
+
+/*FIN DE PERSONALIZACIÓN DE LAS FUENTES*/
+/*ANIMACIÓN DE ELEMENTOS POR CLASE*/
+.rotando {
+	/*-webkit-animation: animacio 4s;   
+    animation: animacio 4s;
+*/    
+    -webkit-transition: -webkit-transform 1s,background 1s,width 1s,height 1s,font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width,height,-o-transform;
+	-o-transition-duration: 1s,1s,1s,1s,1s,1s;
+	-moz-transition-property: width,height,-o-transform,background;
+	-moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+	transition-property: width,height,transform,background;
+	transition-duration: 1s,1s,1s,1s,1s,;
+	box-sizing: border-box;
+}
+.rotando:hover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-sizing: border-box;
+}
+.soslayando {
+	/*-webkit-animation: animacio 4s;   
+    animation: animacio 4s;
+*/    
+    -webkit-transition: -webkit-transform 1s,background 1s,width 1s,height 1s,font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width,height,-o-transform;
+	-o-transition-duration: 1s,1s,1s,1s,1s,1s;
+	-moz-transition-property: width,height,-o-transform,background;
+	-moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+	transition-property: width,height,transform,background;
+	transition-duration: 1s,1s,1s,1s,1s,;
+	box-sizing: border-box;
+}
+.soslayando:hover {
+	-moz-transform: rotateY(30deg);
+	-webkit-transform: rotateY(30deg);
+	-o-transform: rotateY(30deg);
+	transform: rotateY(30deg);
+	box-sizing: border-box;
+}
+
+
+.girando:hover {
+	-moz-transform: rotateY(360deg);
+	-webkit-transform: rotateY(360deg);
+	-o-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+	box-sizing: border-box;
+}
+.girando {
+	/*-webkit-animation: animacio 4s;   
+    animation: animacio 4s;
+*/    
+    -webkit-transition: -webkit-transform 1s,background 1s,width 1s,height 1s,font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width,height,-o-transform;
+	-o-transition-duration: 1s,1s,1s,1s,1s,1s;
+	-moz-transition-property: width,height,-o-transform,background;
+	-moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+	transition-property: width,height,transform,background;
+	transition-duration: 1s,1s,1s,1s,1s,;
+	box-sizing: border-box;
+}
+
+
+.fondando {
+	/*-webkit-animation: animacio 4s;   
+    animation: animacio 4s;
+*/    
+    -webkit-transition: -webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width,height,-o-transform;
+	-o-transition-duration: 1s,1s,1s,1s,1s,1s;
+	-moz-transition-property: width,height,-o-transform,background;
+	-moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+	transition-property: width,height,transform,opacity,background;
+	transition-duration: 1s,1s,1s,1s,1s,1s;
+	
+}
+
+.fondando:hover {
+	background: #006600;
+}
+/*FIN DE ANIMACIÓN DE ELEMENTOS POR CLASE*/
+
+
+.labelForm{
+	border-radius:4px;
+	background-color:aquamarine;
+	border:1px darkblue solid ;
+	color:darkblue;
+	padding:0px 6px 0px 6px;
+	margin-right:10px;
+	min-width:200px;
+}
+#gespaPeu {
+	background-image: url('../img/gespa6.gif');
+	background-repeat: repeat-x;
+	display: block;
+	height: 10vw;
+	 width: 100%;
+	  float : left;
+}
+body {
+    background-image: url('../img/fonsweb.jpg');
+    background-attachment: fixed;
+    color: silver;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#barraNav a:hover{
+    color: #CCFF00;
+}
+.activo{
+    background-color:#668000;
+    color: #CCFF00;
+}
+.activo a{
+    color:#CCFF00;
+}
+#navIndex a{
+    background-color:#668000;
+    color:#CCFF00;
+}

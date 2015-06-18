@@ -1,0 +1,11 @@
+
+# app/config/routing.yml
+root_show:
+    path:      /
+    defaults:  { _controller: AppBundle:Root:show }
+abeja_show:
+    path:      /abeja
+    defaults:  { _controller: AppBundle:Abeja:show }
+caballo_show:
+    path:      /caballo
+    defaults:  { _controller: AppBundle:Caballo:show }

@@ -1,0 +1,375 @@
+<html>
+<head>
+<title>Aire Lliure - Activitats Outdoor :::</title>
+<meta NAME="keywords" CONTENT="Aire Lliure, Raids, Aventura, Tarragona, Catalunya, Orienteering, Adventure races, Activitats Outdoor, Adventure">
+<meta NAME="description" CONTENT="Events esportius i activitats outdoor. 
+Orienteering | Trail running | MTB | Climbing | Adventure races & travels
+Multiactivites | Triathlon | Duathlon | Rogaining | Alpinism | Mountain guide services 
+
+Gestionem, de manera innovadora i creativa, les activitats del teu club esportiu amb convicció d'èxit. La nostra experiència avala eficiència i solidesa organitzativa.">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+<meta NAME="robots" CONTENT="all">
+
+
+<link rel="stylesheet" href="../../css/fullestils.css" type="text/css">
+
+<script language="javascript" type="text/javascript">    
+
+function MostrarFecha()   
+   {   
+   var nombres_dias = new Array("Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte")   
+   var nombres_meses = new Array("Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre")   
+  
+   var fecha_actual = new Date()   
+  
+   dia_mes = fecha_actual.getDate()     //dia del mes   
+   dia_semana = fecha_actual.getDay()       //dia de la semana   
+   mes = fecha_actual.getMonth() + 1   
+   anio = fecha_actual.getFullYear()   
+  
+   //escribe en pagina   
+   document.write(nombres_dias[dia_semana] + ", " + dia_mes + " de " + nombres_meses[mes - 1] + " de " + anio)   
+   }   
+  
+</script>
+
+<script type="text/javascript">
+<!--
+var current="Sortida!"	
+var year=2012     
+var month=8        
+var day=27       
+var hour=06        
+var minute=00      
+var tz=1          
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countdown(yr,m,d,hr,min){
+theyear=yr;themonth=m;theday=d;thehour=hr;theminute=min
+    var today=new Date()
+    var todayy=today.getYear()
+    if (todayy < 1000) {todayy+=1900}
+    var todaym=today.getMonth()
+    var todayd=today.getDate()
+    var todayh=today.getHours()
+    var todaymin=today.getMinutes()
+    var todaysec=today.getSeconds()
+    var todaystring1=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+    var todaystring=Date.parse(todaystring1)+(tz*1000*60*60)
+    var futurestring1=(montharray[m-1]+" "+d+", "+yr+" "+hr+":"+min);
+    var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
+    var dd=futurestring-todaystring
+    var dday=Math.floor(dd/(60*60*1000*24)*1)
+    var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+    var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+    var dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+    if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=0){
+        document.getElementById('count2').innerHTML=current;
+        document.getElementById('count2').style.display="inline";
+        document.getElementById('count2').style.width="390px";
+        document.getElementById('dday').style.display="none";
+        document.getElementById('dhour').style.display="none";
+        document.getElementById('dmin').style.display="none";
+        document.getElementById('dsec').style.display="none";
+        document.getElementById('days').style.display="none";
+        document.getElementById('hours').style.display="none";
+        document.getElementById('minutes').style.display="none";
+        document.getElementById('seconds').style.display="none";
+        document.getElementById('spacer1').style.display="none";
+        document.getElementById('spacer2').style.display="none";
+        return;
+    }
+    else {
+        document.getElementById('count2').style.display="none";
+        document.getElementById('dday').innerHTML=dday;
+        document.getElementById('dhour').innerHTML=dhour;
+        document.getElementById('dmin').innerHTML=dmin;
+        document.getElementById('dsec').innerHTML=dsec;
+        setTimeout("countdown(theyear,themonth,theday,thehour,theminute)",1000);
+    }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+</head>
+
+<body bgcolor="#FFFFFF" background="img/fonsweblanc.jpg" text="#000000" link="#CCFF00" vlink="#FFFFFF" style="background-repeat: no-repeat; background-attachment:fixed; margin:0px" onload="countdown(year,month,day,hour,minute);MM_preloadImages('img/mailblack.gif')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td> <div align="center"> 
+<table width="900" height="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td height="19" bgcolor="#000000" class="lletres"> 
+<div align="right"> 
+                <table width="99%" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr> 
+                    <td width="50%" id="links1" valign="top"><a href="../../index.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','../../img/logoairepetitcolor.gif',1)"><img src="../../img/logoairepetitgrey.gif" name="Image9" width="119" height="15" border="0" align="absmiddle"></a>&nbsp;&nbsp;&nbsp;<a href="../../index.htm">Inici</a> 
+                      <font color="#666666" size="1">|</font> <a href="../../calendari.htm">Calendari</a> 
+                      <font color="#666666" size="1">|</font> <a href="../../arxiu.htm">Arxiu</a> 
+                      <font color="#666666" size="1">|</font> <a href="../../airelliure.htm">Aire 
+                      Lliure </a>&nbsp; </td>
+                    <td width="34%"> <div align="right" id="links2"><span class="SeparadorsIdiomes"><a href="inscripcionscast.htm">ES</a> 
+                        | <a href="inscripcions.htm"><font color="#CCFF00">CAT</font></a> 
+                        &nbsp; </span></div></td>
+                  </tr>
+                </table>
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="150"><img src="img/frontal.jpg" width="900" height="200"></td>
+          </tr>
+          <tr> 
+            <td height="18"><table width="100%" height="25" border="0" cellpadding="0" cellspacing="2" background="../../img/fonslinks.jpg" bgcolor="#000000">
+<tr> 
+                  <td width="680"> 
+<table width="665" height="50" border="0" cellpadding="0" cellspacing="2">
+<tr> 
+                        <td width="67"> 
+<div align="center"><span id="linksblau"><a href="index.htm">Novetats</a></span></div></td>
+                        <td width="19"> 
+                          <div align="center"><span class="Separadors" id="linksblau"><font size="2">|</font></span></div></td>
+                        <td width="81"> 
+                          <div align="center"><span id="linksblau"><a href="presentacio.htm">Presentaci&oacute;</a></span></div></td>
+                        <td width="21"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span><span id="linksblau"></span></div></td>
+                        <td width="85"> 
+                          <div align="center"><span id="linksblau"><a href="programa.htm">Programa</a></span><span class="Separadors" id="linksvermell"></span></div></td>
+                        <td width="18"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span></div></td>
+                        <td width="140"> 
+                          <div align="center"><span id="linksblau"><a href="informacio.htm">Informaci&oacute; 
+                            tècnica</a></span><span class="Separadors" id="linksvermell"></span></div></td>
+                        <td width="19"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span></div></td>
+                        <td width="101"> 
+                          <div align="center"><span id="linksblau"><a href="inscripcions.htm"><font color="#0033FF">Inscripcions</font></a></span></div></td>
+                        <td width="11"> 
+                          <div align="center"><span class="Separadors" id="linksvermell"><font size="2">|</font></span></div></td>
+                        <td width="79"> 
+                          <div align="center"><span id="linksblau"><a href="galeria.htm">Galeria</a></span></div></td>
+                      </tr>
+                    </table></td>
+                  <td width="214" valign="bottom"> 
+                    <div align="right"><span class="lletres">&nbsp; 
+                      <!-- Para que muestre la fecha -->
+                      <script language="JavaScript" type="text/javascript">  MostrarFecha();   
+</script>
+                      &nbsp; &nbsp; </span></div></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td height="4" bgcolor="#0033FF"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#FFFFFF"> <table width="900" border="0" cellspacing="0" cellpadding="8">
+                <tr> 
+                  <td width="654" valign="top">
+<table width="99%" border="0" align="center" cellpadding="10" cellspacing="0">
+                      <tr> 
+                        <td background="img/fons.jpg" valign="top"> <span class="T&iacute;tolsNoticies" id="LinksNoticies"><font color="#CCCCCC" size="5">Inscripcions</font> 
+                          </span><span class="LletresNegres"><br>
+                          </span> <p class="Texte">&nbsp;
+                          <p class="Texte"><font color="#00FF00"><strong><font color="#FF0000">TANCADES</font></strong></font>
+<p align="left" class="Texte"><strong>Si no heu estat a temps d'inscriure-us poseu-vos 
+                            en contacte via correu electr&ograve;nic <a href="mailto:%20info@airelliure.net" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('mail','','img/mailblack.gif',1)"><img src="img/mail.gif" name="mail" width="136" height="22" border="0" align="absmiddle"></a> 
+                            </strong>
+                          <p> </p>
+                          <p>Tothom a les seves marques!! :)</p>
+                          <p align="center" class="Texte"><a href="documents/LlistatInscrits.htm" target="_blank"><font color="#0000FF">-&gt; 
+                            Llistat d'inscrits actualitzat</font></a> 
+                          <p class="Texte"><br>
+                            <br>
+                            <span class="T&iacute;tolsNoticies" id="LinksNoticies">Quotes*</span></p>
+                          <p class="Lletrapetita"> *Tot participant haur&agrave; 
+                            d'estar assegurat per poder realitzar l'activitat 
+                            aix&iacute; com el reglament i les indicacions de 
+                            l'organitzaci&oacute;. No es tracta d'una ruta guiada.</p>
+                          <p class="Texte"><u>FEDERATS FCOC o FEDO RAID, FEDME, 
+                            FEEC D o superior. </u><br>
+                            <br>
+                            <font color="#FF0000">Per persona</font>
+                          <table width="61%" border="0" align="center" cellpadding="2" cellspacing="2">
+                            <tr> 
+                              <td width="118" height="20" class="Texte"> <div align="left">Categoria</div></td>
+                              <td width="119" class="Texte">&nbsp;</td>
+                              <td width="119" class="Texte">Soci Montsant</td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="118" bgcolor="#000000" class="Texte"> 
+                                <div align="center"><strong><font color="#FFFFFF">&Egrave;LIT</font></strong></div></td>
+                              <td width="109" class="Texte"><div align="center">30&euro; 
+                                  x persona</div></td>
+                              <td width="119" class="Texte"><div align="center">22,50&euro; 
+                                  x persona</div></td>
+                            </tr>
+                            <tr bgcolor="#E9E9E9"> 
+                              <td width="118" height="21" bgcolor="#FF0000" class="Texte"> 
+                                <div align="center"><strong><font color="#FFFFFF">AVENTURA</font></strong></div></td>
+                              <td width="109" class="Texte"><div align="center">30&euro; 
+                                  x persona</div></td>
+                              <td width="119" class="Texte"><div align="center">22,50&euro; 
+                                  x persona</div></td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="118" bgcolor="#FFFF00" class="Texte"> 
+                                <div align="center"><strong>SOLO</strong></div></td>
+                              <td width="109" class="Texte"><div align="center">35&euro; 
+                                  x persona</div></td>
+                              <td width="119" class="Texte"><div align="center">25&euro; 
+                                  x persona</div></td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td width="118" bgcolor="#00FF00" class="Texte"> 
+                                <div align="center"><strong>INICIACI&Oacute;</strong></div></td>
+                              <td width="109" bgcolor="#E9E9E9" class="Texte"><div align="center">22,50&euro; 
+                                  x persona</div></td>
+                              <td width="119" bgcolor="#E9E9E9" class="Texte"><div align="center">17,50&euro; 
+                                  x persona</div></td>
+                            </tr>
+                            <tr bgcolor="#DADADA"> 
+                              <td bgcolor="#0000FF" class="Texte"> <div align="center"><strong><font color="#FFFFFF">FAMILIAR</font></strong></div></td>
+                              <td class="Texte"><div align="center">15&euro; x 
+                                  persona</div></td>
+                              <td class="Texte"><div align="center">10&euro; x 
+                                  persona</div></td>
+                            </tr>
+                          </table>
+                          <div align="center">
+                            <p><span class="Lletrapetita"> * alta de soci Club 
+                              Montsant Orientaci&oacute; <strong>18&euro;</strong> 
+                              x persona.<strong> Com fer-se soci? <a href="http://www.clubmontsant.org/index.php?option=com_content&task=view&id=18&Itemid=31" target="_blank"><font color="#0000FF">Aqu&iacute;</font></a></strong></span></p>
+                            
+                        <br>
+                            <p align="left" class="Texte"><u>ALTRES LLIC&Egrave;NCIES 
+                              FEDERATIVES o NO FEDERATS ( +7&euro; de llic&egrave;ncia 
+                              temporal) </u> <BR>
+                              <br>
+                              <font color="#FF0000">Per persona</font> 
+                            <table width="61%" border="0" align="center" cellpadding="2" cellspacing="2">
+                              <tr> 
+                                <td width="118" height="20" class="Texte"> <div align="left">Categoria</div></td>
+                                <td width="119" class="Texte">&nbsp;</td>
+                                <td width="119" class="Texte">Soci Montsant</td>
+                              </tr>
+                              <tr bgcolor="#DADADA"> 
+                                <td width="118" bgcolor="#000000" class="Texte"> 
+                                  <div align="center"><strong><font color="#FFFFFF">&Egrave;LIT</font></strong></div></td>
+                                <td width="109" class="Texte"><div align="center">37&euro; 
+                                    x persona</div></td>
+                                <td width="119" class="Texte"><div align="center">29,5&euro; 
+                                    x persona</div></td>
+                              </tr>
+                              <tr bgcolor="#E9E9E9"> 
+                                <td width="118" height="21" bgcolor="#FF0000" class="Texte"> 
+                                  <div align="center"><strong><font color="#FFFFFF">AVENTURA</font></strong></div></td>
+                                <td bgcolor="#DADADA" class="Texte"><div align="center">37&euro; 
+                                    x persona</div></td>
+                                <td bgcolor="#DADADA" class="Texte"><div align="center">29,5&euro; 
+                                    x persona</div></td>
+                              </tr>
+                              <tr bgcolor="#DADADA"> 
+                                <td width="118" bgcolor="#FFFF00" class="Texte"> 
+                                  <div align="center"><strong>SOLO</strong></div></td>
+                                <td width="109" class="Texte"><div align="center">42&euro; 
+                                    x persona</div></td>
+                                <td width="119" class="Texte"><div align="center">32&euro; 
+                                    x persona</div></td>
+                              </tr>
+                              <tr bgcolor="#DADADA"> 
+                                <td width="118" bgcolor="#00FF00" class="Texte"> 
+                                  <div align="center"><strong>INICIACI&Oacute;</strong></div></td>
+                                <td width="109" bgcolor="#E9E9E9" class="Texte"><div align="center">29,5&euro; 
+                                    x persona</div></td>
+                                <td width="119" bgcolor="#E9E9E9" class="Texte"><div align="center">24,5&euro; 
+                                    x persona</div></td>
+                              </tr>
+                              <tr bgcolor="#DADADA"> 
+                                <td bgcolor="#0000FF" class="Texte"> <div align="center"><strong><font color="#FFFFFF">FAMILIAR</font></strong></div></td>
+                                <td class="Texte"><div align="center">22&euro; 
+                                    x persona</div></td>
+                                <td class="Texte"><div align="center">17&euro; 
+                                    x persona</div></td>
+                              </tr>
+                            </table>
+                            <div align="center"><span class="Lletrapetita"><br>
+                              * alta de soci Club Montsant Orientaci&oacute; <strong>18&euro;</strong> 
+                              x persona.<strong> Com fer-se soci? <a href="http://www.clubmontsant.org/index.php?option=com_content&task=view&id=18&Itemid=31" target="_blank"><font color="#0000FF">Aqu&iacute;</font></a></strong></span></div>
+                          </div>
+                          <p align="center" class="Lletrapetita">&nbsp;</p>
+                          <p class="Texte"><span class="T&iacute;tolsNoticies" id="LinksNoticies">Pagament</span></p>
+                          <p class="Lletrapetita"> *Tot participant haur&agrave; 
+                            d'estar assegurat per poder realitzar l'activitat, 
+                            ja que no es tracta d'una activitat guiada.</p>
+                          <p class="Texte">La inscripci&oacute; ser&aacute; v&agrave;lida 
+                            a partir de que s'hagi realitzat l'ingr&eacute;s de 
+                            la quota corresponent. A partir d'aquest moment ser&aacute;n 
+                            considerades les inscripcions fora de termini. Tindr&agrave;n 
+                            un rec&agrave;rreg extra de <strong>6&euro;</strong> 
+                            per persona. 
+                          <p align="left" class="Texte">Realitzeu l'ingr&eacute;s 
+                            al cc de La Caixa:</p>
+                          <p align="center" class="Texte"><font color="#0000FF">2100 
+                            - 7035 - 31 - 0200001315</font></p>
+                          <p align="center" class="Texte"> cc del Club Montsant 
+                            Orientaci&oacute;</p>
+                          <p align="center" class="Texte"><strong><font color="#FF0000">Atenci&oacute;!</font> 
+                            No oblideu indicar la refer&egrave;ncia d'ingr&eacute;s 
+                            &quot;NOM DE L'EQUIP + CATEGORIA&quot;. En cas contrari 
+                            no identificarem el vostre ingr&eacute;s i la inscripci&oacute; 
+                            no ser&aacute; v&agrave;lida.</strong></p>
+                          </em></p>
+                          <p></p></td>
+                      </tr>
+                    </table></td>
+                  <td width="246" valign="top"><iframe width="246" height="1200" src="includes/logos.htm" scrolling="no" frameborder="no"></iframe>
+                  </td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr> 
+            <td height="80" bgcolor="#FFFFFF"><div align="center"><img src="../../img/separadorgran2.gif" width="860" height="7"> 
+                <br>
+              </div>
+              <div>
+                <iframe width="100%" height="350" src="../../includes/bottom.htm" scrolling="no" frameborder="no"></iframe>
+              </div></td>
+          </tr>
+          <tr> 
+            <td height="80" background="../../img/gespa6.gif" bgcolor="#FFFFFF"> 
+              <p>&nbsp;</p></td>
+          </tr>
+        </table>
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>

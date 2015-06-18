@@ -1,0 +1,690 @@
+<html>
+<head>
+<title>Aire Lliure - Activitats Outdoor :::</title>
+<meta NAME="keywords" CONTENT="Aire Lliure, Raids, Aventura, Tarragona, Catalunya, Orienteering, Adventure races, Activitats Outdoor, Adventure">
+<meta NAME="description" CONTENT="Events esportius i activitats outdoor. 
+Orienteering | Trail running | MTB | Climbing | Adventure races & travels
+Multiactivites | Triathlon | Duathlon | Rogaining | Alpinism | Mountain guide services 
+
+Gestionem, de manera innovadora i creativa, les activitats del teu club esportiu amb convicció d'èxit. La nostra experiència avala eficiència i solidesa organitzativa.">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+<meta NAME="robots" CONTENT="all">
+
+
+<link rel="stylesheet" href="../../css/fullestils.css" type="text/css">
+
+<script language="javascript" type="text/javascript">    
+
+function MostrarFecha()   
+   {   
+   var nombres_dias = new Array("Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte")   
+   var nombres_meses = new Array("Gener", "Febrer", "Març", "Abril", "Maig", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre")   
+  
+   var fecha_actual = new Date()   
+  
+   dia_mes = fecha_actual.getDate()     //dia del mes   
+   dia_semana = fecha_actual.getDay()       //dia de la semana   
+   mes = fecha_actual.getMonth() + 1   
+   anio = fecha_actual.getFullYear()   
+  
+   //escribe en pagina   
+   document.write(nombres_dias[dia_semana] + ", " + dia_mes + " de " + nombres_meses[mes - 1] + " de " + anio)   
+   }   
+  
+</script>
+
+<script type="text/javascript">
+
+
+var current="Sortida!"	
+var year=2012     
+var month=8        
+var day=27       
+var hour=06        
+var minute=00      
+var tz=1          
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countdown(yr,m,d,hr,min){
+theyear=yr;themonth=m;theday=d;thehour=hr;theminute=min
+    var today=new Date()
+    var todayy=today.getYear()
+    if (todayy < 1000) {todayy+=1900}
+    var todaym=today.getMonth()
+    var todayd=today.getDate()
+    var todayh=today.getHours()
+    var todaymin=today.getMinutes()
+    var todaysec=today.getSeconds()
+    var todaystring1=montharray[todaym]+" "+todayd+", "+todayy+" "+todayh+":"+todaymin+":"+todaysec
+    var todaystring=Date.parse(todaystring1)+(tz*1000*60*60)
+    var futurestring1=(montharray[m-1]+" "+d+", "+yr+" "+hr+":"+min);
+    var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
+    var dd=futurestring-todaystring
+    var dday=Math.floor(dd/(60*60*1000*24)*1)
+    var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1)
+    var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1)
+    var dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1)
+    if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=0){
+        document.getElementById('count2').innerHTML=current;
+        document.getElementById('count2').style.display="inline";
+        document.getElementById('count2').style.width="390px";
+        document.getElementById('dday').style.display="none";
+        document.getElementById('dhour').style.display="none";
+        document.getElementById('dmin').style.display="none";
+        document.getElementById('dsec').style.display="none";
+        document.getElementById('days').style.display="none";
+        document.getElementById('hours').style.display="none";
+        document.getElementById('minutes').style.display="none";
+        document.getElementById('seconds').style.display="none";
+        document.getElementById('spacer1').style.display="none";
+        document.getElementById('spacer2').style.display="none";
+        return;
+    }
+    else {
+        document.getElementById('count2').style.display="none";
+        document.getElementById('dday').innerHTML=dday;
+        document.getElementById('dhour').innerHTML=dhour;
+        document.getElementById('dmin').innerHTML=dmin;
+        document.getElementById('dsec').innerHTML=dsec;
+        setTimeout("countdown(theyear,themonth,theday,thehour,theminute)",1000);
+    }
+}
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#CCFF00" vlink="#FFFFFF" style="background-repeat: no-repeat; background-attachment:fixed; margin:0px" onload="countdown(year,month,day,hour,minute)">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+  <tr> 
+    <td> <div align="center"> 
+        <table width="900" height="93%" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+            <td height="150"><div align="center"><img src="img/frontal.jpg" width="900" height="200"></div></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#FFFFFF"><p>&nbsp;</p>
+              <p><span class="T&iacute;tolsNoticies" id="LinksNoticies"><font color="#CCCCCC" size="5">Mem&ograve;ria 
+                descriptiva </font></span></p>
+              <p class="Texte" id="links2">TGN Sprint Raid es tracta d'una activitat 
+                esportiva de resist&egrave;ncia que inclou diferents modalitats 
+                esportives en una sola prova durant 6 hores. BICICLETA TOT TERRENY, 
+                ESCALADA, RUNNING, NATACI&Oacute;, KAYAK, RAPPEL, ORIENTACI&Oacute;, 
+                TIR AMB ARC, etc.. Es v&agrave;lid per al campionat de Catalunya 
+                Absolut i vindr&agrave;n corredors d'arreu de Catalunya. Organitzat 
+                pel Club Montsant Orientaci&oacute; i Aire Lliure.</p>
+              <p class="Texte">La Ciutat de Tarragona (antiga Tarraco) acollir&agrave; 
+                el <strong>Campionat de Catalunya de Sprint Raids</strong> puntuable 
+                per la <strong>Copa Catalana Sprint Raids 2012</strong> de la 
+                <strong>Federaci&oacute; de Curses d'Orientaci&oacute; de Catalunya</strong>.</p>
+              <p class="Texte">Es tracta d'un raid multiaventura promocional apte 
+                per tots els nivells on primar&agrave; el gaudi del participant. 
+              </p>
+              <p class="Texte">La diversi&oacute; estar&agrave; assegurada tant 
+                per les categories m&eacute;s exigents com per les d'aventura 
+                i lleure. Guadireu de proves de kayak, nataci&oacute;, psicobloc, 
+                coastering, trailrunning, escalada, tir amb arc, mountain bike 
+                i els patins en l&iacute;nia. Tot orientant-nos amb una cartografia 
+                realitzada expressament per la prova, amb simbologia espec&iacute;fica 
+                i adaptada a les necessitats.</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <table width="90%" height="469" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr> 
+                  <td class="LletresNegres"> <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td><img src="img/tgn7.jpg" width="200" height="150"></td>
+                        <td><img src="img/tgn8.jpg" width="200" height="150"></td>
+                        <td><img src="img/tgn3.jpg" width="200" height="150"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="img/tgn1.jpg" width="200" height="150"></td>
+                        <td><img src="img/tgn4.jpg" width="200" height="150"></td>
+                        <td><img src="img/tgn10.jpg" width="200" height="150"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="img/tgn5.jpg" width="200" height="150"></td>
+                        <td><img src="img/tgn6.jpg" width="200" height="150"></td>
+                        <td><img src="img/tgn2.jpg" width="200" height="150"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td class="LletresNegres"><div align="right">Tarragona</div></td>
+                </tr>
+              </table>
+              <p> 
+              <table width="99%" border="0" align="center" cellpadding="10" cellspacing="0">
+                <tr> 
+                  <td> <p class="Texte">Tarragona es troba al Tarragon&eacute;s, 
+                      una de les tres comarques, amb el Baix Camp i l'Alt Camp, 
+                      que formen el Camp de Tarragona, gran plana costanera voltada 
+                      per muntanyes d'al&ccedil;ada moderada que conformen les 
+                      muntanyes de la Costa Daurada. <br>
+                      Situada a tocar de mar, entre el riu Francol&iacute; i el 
+                      Gai&agrave;, les seves platjes de sorra daurada donen nom 
+                      a la costa a la qual pertany. Gran ciutat romana que, en 
+                      el seu temps, represent&agrave;, la capital de la provincia 
+                      llavors anomenada: Hisp&agrave;nia Citerior Tarraconensis. 
+                      Aquesta capitalitat va promoure el creixement de la ciutat 
+                      convertint-se llavors en una de les m&eacute;s grans de 
+                      la pen&iacute;nsula amb un f&ograve;rum i un circ rom&agrave;. 
+                      En l'&egrave;poca medieval esdevingu&eacute; arquebisbat 
+                      metropolit&agrave; de la corona catalanoaragonesa. Per tots 
+                      aquests vestigis i excepcionalitats culturals, l'any 2000, 
+                      la UNESCO va declarar la ciutat de Tarragona Patrimoni de 
+                      la Humanitat. </p>
+                    <p class="Texte">En l'actualitat &eacute;s un dels destins 
+                      tur&iacute;stics m&eacute;s importants de Catalunya gr&agrave;cies 
+                      benignitat del clima, la gastronomia i el patrimoni monumental. 
+                      Fou declarada seu dels <em><strong>XVIII Jocs del Mediterrani 
+                      2017</strong></em>.</p></td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><span class="T&iacute;tolsNoticies"><font color="#CCCCCC" size="5">Permisos</font></span></p>
+              <p class="Texte">La prova es desenvolupa habitualment en un entorn 
+                natural. En el cas d'aquest raid ser&aacute; un raid 50% urb&agrave; 
+                50% rural. <strong><font color="#0000FF">Numero de participants: 
+                50-150</font></strong></p>
+              <p class="Texte"><strong>L'itinerari del raid no est&agrave; delimitat</strong> 
+                el corredor, amb l'ajuda d'un mapa, pot escollir lliurement per 
+                on despla&ccedil;ar-se, per tant, fa servir les vies p&uacute;bliques 
+                com un usuari qualsevol. Tant &eacute;s aix&iacute; que els participants 
+                estan <strong>expressament obligats a seguir les normes de circulaci&oacute;</strong>. 
+                D'aquesta manera, l'organitzaci&oacute; d'aquest raid a Tarragona 
+                ciutat i entorn <strong>no implica cap ocupament de via ni mol&egrave;stia 
+                per viananants i vehicles. </strong>Donades les caracter&iacute;stiques 
+                de la prova <strong>no hi haura cap tipus d'aglomeraci&oacute; 
+                </strong>donat tamb&eacute; perque cap corredor escollir&aacute; 
+                la mateixa ruta.</p>
+              <p class="Texte">Aix&iacute;, l'objecte de la nostra sol.licitud 
+                es informar de que aquesta activitat es portar&agrave; a terme 
+                el <strong><font color="#0000FF">dissabte dia 25 d'Agost de 2012</font></strong> 
+                amb sortida a les <strong><font color="#0000FF">6:00h</font></strong><font color="#0000FF"> 
+                del mat&iacute; i finint a les <strong>13:00h</strong></font> 
+                del migdia.</p>
+              <p class="Texte">L'any passat vam poder parlar amb el sergent de 
+                gu&agrave;rdia urbana i ens va donar el vist-i-plau ja que no 
+                implica ocupament de via. No obstant, l'arribada i sortida de 
+                la cursa (centre de competici&oacute;) es desenvolupar&aacute; 
+                a la <font color="#0000FF">PLATAFORMA DE LA PLATJA DEL MIRACLE</font>. 
+                All&iacute; convocarem als participants i aparcaran els seus vehicles, 
+                per tant hi haur&agrave; moviment de persones. L'any passat ens 
+                van assignar una patrulla (2 agents).</p>
+              <p class="Texte"><strong>Nom&eacute;s necessitem alg&uacute;na dotaci&oacute; 
+                per prevenci&oacute; i ordenaci&oacute; del transit quan surtin 
+                els corredors, la resta d'activitat est&agrave; planificada per 
+                a que discorri de forma lliure sense embussaments. Hi ha una activitat 
+                de patins que ocupa el carril bici de l'escollera del port, per&ograve; 
+                aix&ograve; hem demanat permis a comand&agrave;ncia del port.</strong></p>
+              <p class="Texte"><strong>S&iacute; que demanem que el <font color="#0000FF">p&agrave;rking 
+                el poguem reservar</font> per als participants de la prova desde 
+                les <font color="#0000FF">5:00h del mat&iacute; a les 10:00h del 
+                mat&iacute;</font>.</strong></p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><strong><font size="4">SOL.LICITUTS CONCRETES </font></strong></p>
+              <p class="Texte">a l'atenci&oacute; de Xavier Tarr&eacute;s, Conseller 
+                delegat d'Espais P&uacute;blics</p>
+              <p class="Texte">Primer de tot agrair al conseller per rebre'ns 
+                fa uns mesos per poder parlar d'aquest tema i d'altres que involucren 
+                el Club Montsant Orientaci&oacute; i les activitats que realitzem. 
+                Aprofitem per convidar-lo a l'entrega de premis que es far&aacute; 
+                el Dissabte 25 d'Agost a les 13:00h. </p>
+              <p class="Texte">Tot seguit demanem els permisos concrets:</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><strong><u>ZONA DE SORTIDES I ARRIBADES</u></strong></p>
+              <p class="Texte">Les arribades i sortides de la cursa (centre de 
+                competici&oacute;) es desenvolupar&aacute; a la PLATAFORMA DE 
+                LA PLATJA DEL MIRACLE. El perm&iacute;s d'ocupaci&oacute; de la 
+                part superior de la plataforma ja ha estat demanat al Departament 
+                de Territori i Sostenibilitat. <strong><font color="#0000FF">NO 
+                OCUPAREM VIA P&Uacute;BLICA. L'&agrave;rea compta amb serveis 
+                p&uacute;blics. </font></strong></p>
+              <p class="Texte"><strong>OCUPACI&Oacute; D'ESPAI P&Uacute;BLIC: 
+                1.500 m2</strong></p>
+              <p class="Texte">&nbsp;</p>
+              <p align="center" class="Texte"><img src="../../../../../../Documents%20and%20Settings/net/Escritorio/Untitled-1.jpg" width="794" height="320"></p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p align="center" class="Texte"><img src="img/timthumb.jpg" width="800" height="512"></p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><strong><u>RAPPEL AL BALC&Oacute; DEL MEDITERRANI</u></strong></p>
+              <table width="95%" border="0" align="center" cellpadding="8" cellspacing="0">
+                <tr>
+                  <td VALIGN="TOP">
+<p class="Texte">Tractant-se d'un campionat de catalunya de 
+                      la modalitat i que volem que tant la nostra ciutat com l'organitzaci&oacute; 
+                      surti llu&iuml;da, volem muntar un rappel al balc&oacute; 
+                      del mediterrani, com en edicions anteriors s'ha fet al Transaventur. 
+                      Hem estudiat l'afectaci&oacute; al lloc de fer aquesta activitat 
+                      i es nul.la o m&iacute;nima si seguim unes minimes normes 
+                      d'atenci&oacute;.</p>
+                    <p class="Texte">- La fixaci&oacute; de les cordes que permetrien 
+                      que els participants baixesin es farien al mateix balc&oacute; 
+                      assegurat amb un pes.</p>
+                    <p class="Texte">- Els participants baixarien per la roca 
+                      sense malmetre cap planta de la paret.</p>
+                    <p class="Texte">- A l'arribar a terra hi haura una o dues 
+                      persones atenent la seguretat del participant i mirant de 
+                      no fer malb&eacute; la zona ajardinada. Els participants 
+                      trepitjarien la zona de grava que hi ha en els 2 metres 
+                      que toquen la paret de roca. </p>
+                    <p class="Texte"><strong>OCUPACI&Oacute; D'ESPAI P&Uacute;BLIC: 
+                      200 m2</strong></p>
+                    <p class="Texte">&nbsp;</p>
+                    <p class="Texte"><strong>Especificacions t&egrave;cniques: 
+                      baixar&agrave;n participants amb un pes m&agrave;xim de 
+                      90 kg.</strong></p>
+                    <p class="Texte"><strong>Les cordes es fixar&agrave;n a la 
+                      barana de forma repartida per no carregar forces m&agrave;ximes 
+                      en pocs punts d'aconcoratge. De manera que el pes quedi 
+                      repartit. Tamb&eacute; farem &uacute;s d'un pes (vehicle 
+                      motor) com a seguretat.</strong></p></td>
+                  <td><p class="Texte">A la fotografia es pot veure:</p>
+                    <p><img src="../../../../../../Documents%20and%20Settings/net/Escritorio/P1130076.jpg" width="450" height="600"></p></td>
+                </tr>
+              </table>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><strong><u>CURSA D'ORIENTACI&Oacute; A LA CIUTAT</u></strong></p>
+              <p class="Texte">Una de les seccions de la cursa es orientaci&oacute;. 
+                Aquest any, una de les proves es realitzar una orientaci&oacute; 
+                per tota la ciutat de Tarragona. En aquest cas, reiterem que els 
+                participants poden anar de manera lliure per&ograve; com un ciutad&agrave; 
+                o usuari de la via qualsevol: <strong>SEGUINT LES NORMES DE CIRCULACI&Oacute;</strong>. 
+                Aix&ograve; implica que si incompleixen les normes poden rebre 
+                un sanci&oacute; per part dels agents de l'autoritat aix&iacute; 
+                com una penalitzaci&oacute; en la mateixa puntuaci&oacute; de 
+                la cursa.</p>
+              <p class="Texte"><strong>Ocuparem espai en la col.locaci&oacute; 
+                dels controls de pas. OCUPACI&Oacute; D'ESPAI P&Uacute;BLIC: 50 
+                m2</strong></p>
+              <p class="Texte">La cursa comptar&aacute; amb la col.laboraci&oacute; 
+                de diferents establiments als quals els corredors haur&agrave;n 
+                de visitar per ser puntuats. La zona de cursa &eacute;s la seg&uuml;ent:</p>
+              <table width="86%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><div align="center">
+                      <p class="Texte">CONTROL DE PAS</p>
+                      <p><img src="img/P1120579.jpg" width="262" height="350"></p>
+</div></td>
+                  <td><div align="center"><img src="../../../../../../Documents%20and%20Settings/net/Escritorio/zonacursa.gif" width="736" height="576"></div></td>
+                </tr>
+              </table>
+              <p align="center" class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p><span class="T&iacute;tolsNoticies" id="LinksNoticies"><font color="#CCCCCC" size="5">Programa</font> 
+                </span><span class="LletresNegres"><br>
+                </span> </p>
+              <p class="Texte" id="links2"><strong>Divendres 24 d'Agost 2012, 
+                </strong>lloc a determinar</p>
+              <table width="92%" border="0" align="center" cellpadding="2" cellspacing="2">
+                <tr> 
+                  <td width="41" height="20" class="Texte"> <div align="center">Hora</div></td>
+                  <td width="489" height="20" class="Texte">Observacions</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" class="Texte"> <div align="center">18:00</div></td>
+                  <td width="489" class="Texte"><strong>Obertura</strong> recepci&oacute; 
+                    de corredors TOTES CATEGORIES - Verificaci&oacute; material 
+                    obligatori - Lliurament de documentaci&oacute;. </td>
+                </tr>
+                <tr bgcolor="#E9E9E9"> 
+                  <td width="41" class="Texte"> <div align="center">24:00</div></td>
+                  <td width="489" bgcolor="#E9E9E9" class="Texte"><strong>Tancament</strong> 
+                    recepci&oacute; de corredors TOTES CATEGORIES - Verificaci&oacute; 
+                    material obligatori - Lliurament de documentaci&oacute;. </td>
+                </tr>
+              </table>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><strong>Dissabte 25 d'Agost 2012, </strong>Platja 
+                del Miracle (Tarragona)</p>
+              <table width="92%" border="0" align="center" cellpadding="2" cellspacing="2">
+                <tr> 
+                  <td width="41" height="20" class="Texte"> <div align="center">Hora</div></td>
+                  <td width="489" height="20" class="Texte">Observacions</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" class="Texte"> <div align="center">05:00</div></td>
+                  <td width="489" class="Texte"><strong>Obertura</strong> recepci&oacute; 
+                    de corredors &Eacute;LIT - Verificaci&oacute; material obligatori 
+                    - Lliurament de documentaci&oacute;.</td>
+                </tr>
+                <tr bgcolor="#E9E9E9"> 
+                  <td width="41" class="Texte"> <div align="center">05:45</div></td>
+                  <td width="489" bgcolor="#E9E9E9" class="Texte"><strong>Tancament</strong> 
+                    recepci&oacute; i inici reuni&oacute; t&egrave;cnica &Eacute;LIT</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" bgcolor="#99FF99" class="Texte"> <div align="center">06:00</div></td>
+                  <td width="489" bgcolor="#99FF99" class="Texte">SORTIDA &Eacute;LIT</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td class="Texte"> <div align="center">06:00</div></td>
+                  <td class="Texte"><strong>Obertura</strong> recepci&oacute; 
+                    de corredors SOLO i AVENTURA - Verificaci&oacute; material 
+                    obligatori - Lliurament de documentaci&oacute;.</td>
+                </tr>
+                <tr bgcolor="#E9E9E9"> 
+                  <td class="Texte"> <div align="center">06:45</div></td>
+                  <td bgcolor="#E9E9E9" class="Texte"><strong>Tancament</strong> 
+                    recepci&oacute; i inici reuni&oacute; t&egrave;cnica SOLO 
+                    i AVENTURA</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td bgcolor="#99FF99" class="Texte"> <div align="center">07:00</div></td>
+                  <td bgcolor="#99FF99" class="Texte">SORTIDA SOLO I AVENTURA</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" bgcolor="#E9E9E9" class="Texte"> <div align="center">09:00</div></td>
+                  <td width="489" bgcolor="#E9E9E9" class="Texte"><strong>Obertura</strong> 
+                    recepci&oacute; de corredors INICIACI&Oacute; i FAMILIAR - 
+                    Verificaci&oacute; material obligatori - lliurament de documentaci&oacute;.</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td class="Texte"> <div align="center">09:45</div></td>
+                  <td class="Texte"><strong>Tancament</strong> recepci&oacute; 
+                    i inici reuni&oacute; t&egrave;cnica INICIACI&Oacute; i FAMILIAR</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" bgcolor="#99FF99" class="Texte"> <div align="center">10:00</div></td>
+                  <td width="489" bgcolor="#99FF99" class="Texte">SORTIDA INICIACI&Oacute; 
+                    i FAMILIAR</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" bgcolor="#FF9999" class="Texte"> <div align="center">13:00</div></td>
+                  <td width="489" bgcolor="#FF9999" class="Texte">TANCAMENT DE 
+                    META (totes les categories)</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="41" bgcolor="#FF9999" class="Texte"> <div align="center">13:30</div></td>
+                  <td width="489" bgcolor="#FF9999" class="Texte">Entrega de premis</td>
+                </tr>
+              </table>
+              <p class="Lletrapetita">* de 13:00h a 14:00h dinar incl&oacute;s 
+                amb la quota d'inscripci&oacute;.</p>
+              <p class="Lletrapetita">&nbsp;</p>
+              <p class="Lletrapetita">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><span class="T&iacute;tolsNoticies" id="LinksNoticies"><font color="#CCCCCC" size="5">Informaci&oacute; 
+                t&egrave;cnica</font></span> </p>
+              <p class="Texte" id="links2"><span class="T&iacute;tolsNoticies" id="LinksNoticies"><br>
+                Categories</span></p>
+              <p class="Texte">Es tracta d'un raid multiaventura promocional apte 
+                per tots els nivells on primar&agrave; el gaudi del participant. 
+                R&agrave;pid per&ograve; molt estrat&egrave;gic.</p>
+              <table width="92%" border="0" align="center" cellpadding="2" cellspacing="2">
+                <tr> 
+                  <td width="82" height="20" class="Texte"> <div align="left">Categoria</div></td>
+                  <td width="92" class="Texte">Subcategoria</td>
+                  <td width="97" class="Texte">N&ordm; corredors<span class="Lletrapetita"> 
+                    </span></td>
+                  <td width="53" class="Texte">Circuit</td>
+                  <td width="111" class="Texte">Dificultat t&egrave;cnica</td>
+                  <td width="75" class="Texte">Temps cursa</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="82" bgcolor="#000000" class="Texte"> <div align="center"><strong><font color="#FFFFFF">&Egrave;LIT 
+                      </font><span class="Lletrapetita"><font color="#FFFFFF">(1)</font></span></strong></div></td>
+                  <td width="92" bgcolor="#DADADA" class="Texte">H/D/Mixte</td>
+                  <td width="97" class="Texte">2 </td>
+                  <td width="53" bgcolor="#DADADA" class="Texte">C1</td>
+                  <td width="111" class="Texte">Mitja-Alta</td>
+                  <td width="75" class="Texte">7 hores</td>
+                </tr>
+                <tr bgcolor="#E9E9E9"> 
+                  <td width="82" height="21" bgcolor="#FF0000" class="Texte"> 
+                    <div align="center"><strong><font color="#FFFFFF">AVENTURA</font></strong></div></td>
+                  <td width="92" bgcolor="#E9E9E9" class="Texte">H/D/Mixte</td>
+                  <td width="97" class="Texte">2</td>
+                  <td width="53" bgcolor="#E9E9E9" class="Texte">C2</td>
+                  <td width="111" class="Texte">Mitja</td>
+                  <td width="75" class="Texte">6 hores</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="82" bgcolor="#FFFF00" class="Texte"> <div align="center"><strong>SOLO</strong></div></td>
+                  <td width="92" bgcolor="#DADADA" class="Texte">H/D</td>
+                  <td width="97" class="Texte">1</td>
+                  <td width="53" bgcolor="#DADADA" class="Texte">C2</td>
+                  <td width="111" class="Texte">Mitja</td>
+                  <td width="75" class="Texte">6 hores</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td width="82" bgcolor="#00FF00" class="Texte"> <div align="center"><strong>INICIACI&Oacute;</strong></div></td>
+                  <td width="92" bgcolor="#E9E9E9" class="Texte">-</td>
+                  <td width="97" bgcolor="#E9E9E9" class="Texte">2</td>
+                  <td width="53" bgcolor="#E9E9E9" class="Texte">C3</td>
+                  <td width="111" bgcolor="#E9E9E9" class="Texte">Baixa</td>
+                  <td width="75" bgcolor="#E9E9E9" class="Texte">3 hores</td>
+                </tr>
+                <tr bgcolor="#DADADA"> 
+                  <td bgcolor="#0000FF" class="Texte"> <div align="center"><strong><font color="#FFFFFF">FAMILIAR</font></strong></div></td>
+                  <td bgcolor="#DADADA" class="Texte">-</td>
+                  <td class="Texte">1 + 1<span class="Lletrapetita"> (2)</span></td>
+                  <td bgcolor="#DADADA" class="Texte">C4</td>
+                  <td class="Texte">Baixa</td>
+                  <td class="Texte">3 hores</td>
+                </tr>
+              </table>
+              <p class="Lletrapetita"><span class="Lletrapetita">(1)</span> &Egrave;lit: 
+                categoria puntuable per la Copa Catalana d'Sprint Raids FCOC 2012.</p>
+              <p class="Lletrapetita"><span class="Lletrapetita">(2)</span> Categoria 
+                familiar: equips composats per 1 persona major de 18 anys i una 
+                menor, de la qual estar&agrave; sota la seva responsabilitat i 
+                tutel.la.</p>
+              <p class="Lletrapetita">&nbsp;</p>
+              <p class="Lletrapetita"><span class="T&iacute;tolsNoticies" id="LinksNoticies">Tra&ccedil;ats</span></p>
+              <p class="Texte">- Tra&ccedil;at en papallona dividit en bucles 
+                on hi pot haver una o m&eacute;s modalitats esportives. Cada bucle 
+                tindr&agrave; arribada i sortida al mateix punt: al &quot;control-canvi 
+                central&quot;. En ell hi haur&agrave; preparat un &quot;box&quot; 
+                on cada equip depositar&agrave; tot el material propi necessari 
+                per realitzar el raid. </p>
+              <p class="Texte"> - El dia <strong>24 d'Agost</strong>, a les <strong>10:00h</strong>, 
+                enviarem la seg&uuml;ent informaci&oacute; via correu electr&ograve;nic:</p>
+              <table width="61%" border="0" align="center" cellpadding="2" cellspacing="2">
+                <tr> 
+                  <td bgcolor="#DADADA" class="Texte"> <div align="center">Ordre 
+                      de sectors, bucles i modalitats</div></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E9E9E9" class="Texte"> <div align="center">Material 
+                      obligatori per bucle</div></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#DADADA" class="Texte"> <div align="center">Dist&agrave;ncies 
+                      definitives</div></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E9E9E9" class="Texte"><div align="center">N&ordm; 
+                      de controls</div></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#DADADA" class="Texte"><div align="center">Previsi&oacute; 
+                      meteor&oacute;lica</div></td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#E9E9E9" class="Texte"> <div align="center">Darreres 
+                      informacions de rellevancia</div></td>
+                </tr>
+              </table>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte">&nbsp;</p>
+              <p class="Texte"><span class="T&iacute;tolsNoticies">Material obligatori 
+                </span></p>
+              <p class="Texte"><u>Per equip</u></p>
+              <p class="Texte">- Tel&egrave;fon m&ograve;vil<br>
+                - Br&uacute;ixola<br>
+                - Funda estanca portamapes<br>
+                - Farmaciola (m&iacute;nim: antis&egrave;ptic, antiinflamatori, 
+                esparadrap, gases i benes)<br>
+                - Xiulet<br>
+                - Kit de reparacions BTT<br>
+                <br>
+                <u>Per corredor</u></p>
+              <p class="Texte">- BTT<br>
+                - Casc BTT<br>
+                - Banyador<br>
+                - Paravents impermeable<br>
+                - Bid&oacute; o camelbak per m&iacute;nim 1 litre d'aigua.<br>
+                - Motxilla amb capacitat transportadora del material obligatori 
+                <BR>
+                - Manta de supervivència<br>
+                - 3 barretes energètiques<br>
+                <BR>
+                <font color="#FF0000"> Categoria &Egrave;lit i aventura tamb&eacute;:</font><BR>
+                <br>
+                - Patins en l&iacute;nia<br>
+                - Arn&eacute;s<br>
+                - Mosquet&oacute; de seguretat <br>
+                - Descendedor o 8. 
+              <p class="Texte"><span class="T&iacute;tolsNoticies">Material aportat 
+                per la organitzaci&oacute;</span></p>
+              <p class="Texte">- Kayaks<br>
+                - Material secci&oacute; escalada i rappel<br>
+                - Dorsals<br>
+                - Mapes i road book<br>
+                - Avituallament l&iacute;quid i s&ograve;lid</p>
+              <p class="Texte"><span class="T&iacute;tolsNoticies">Reglament Copa 
+                Catalana Sprint Raids FCOC 2012</span></p>
+              <table width="79%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="63%" height="32"> <p class="Texte" id="linksblau">Reglament 
+                      2012<a href="http://www.raids.fcoc.cat/?page_id=14" target="_blank"><font color="#0000FF"> 
+                      http://www.raids.fcoc.cat/</font></a> </p></td>
+                </tr>
+              </table>
+              <p class="Texte">&nbsp;</p>
+              <p><span class="T&iacute;tolsNoticies" id="LinksNoticies"><font color="#CCCCCC" size="5">Partners</font></span></p>
+              <table width="245" border="0" align="center" cellpadding="5" cellspacing="0">
+                      <tr> 
+                        <td></td>
+                      </tr>
+                      <tr> 
+                        <td><div align="center"> 
+                            
+                      <table width="200" border="0" cellspacing="0" cellpadding="8">
+                        <tr> 
+                          <td><div align="left" class="Patrocinis"> main partners</div></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td><div align="right"></div></td>
+                        </tr>
+                        <tr> 
+                          <td><a href="http://www.tarragona.cat" target="_blank"><img src="img/logos/ajtarragona.gif" width="100" height="70" border="0"></a></td>
+                          <td><a href="http://www.clubmontsant.org" target="_blank"><img src="img/logos/montsant.gif" width="100" height="70" border="0"></a></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr> 
+                          <td class="Patrocinis">partners</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td><div align="right"> 
+                              <div align="right" class="Patrocinis"> </div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                          <td><a href="http://www.niltravel.com" target="_blank"><img src="img/logos/niltravel.gif" width="100" height="70" border="0"></a></td>
+                          <td><img src="img/logos/vivac.gif" width="100" height="70"></td>
+                          <td><img src="img/logos/wala.gif" width="100" height="70"></td>
+                          <td><img src="img/logos/maxibike.gif" width="100" height="70"></td>
+                          <td><img src="img/logos/clubvelaplatjallarga.gif" width="100" height="70"></td>
+                          <td><a href="http://www.antonmassague.com" target="_blank"><img src="img/logos/antonmassague.gif" width="100" height="70" border="0"></a></td>
+                          <td><a href="http://www.autoescolatransit.es" target="_blank"><img src="img/logos/transit.gif" width="100" height="70" border="0"></a></td>
+                          <td><a href="http://www.editorialpiolet.com" target="_blank"><img src="img/logos/edpiolet.gif" width="100" height="70" border="0"></a></td>
+                        </tr>
+                        <tr> 
+                          <td><a href="http://www.cocacola.es" target="_blank"><img src="img/logos/cocacola.gif" width="100" height="70" border="0"></a></td>
+                          <td><a href="http://www.sportmaps.net" target="_blank"><img src="img/logos/sportmaps.gif" width="100" height="70" border="0"></a></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr> 
+                          <td class="Patrocinis">in collaboration</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                        <tr> 
+                          <td><a href="http://www.orientacio.cat" target="_blank"><img src="img/logos/fcoc.gif" width="100" height="70" border="0"></a></td>
+                          <td><a href="http://raids.fcoc.cat" target="_blank"><img src="img/logos/catsprintraids.gif" width="100" height="70" border="0"></a></td>
+                          <td><a href="http://www.ufec.cat" target="_blank"><img src="img/logos/ufec.gif" width="100" height="70" border="0"></a></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                      </table>
+                          </div></td>
+                      </tr>
+                      <tr> 
+                        <td height="15"></td>
+                      </tr>
+                    </table>
+              <p>&nbsp; </p>
+              </td>
+          </tr>
+          <tr> 
+            <td height="80" background="../../img/gespa6.gif" bgcolor="#FFFFFF"> 
+              <p>&nbsp;</p></td>
+          </tr>
+        </table>
+      </div></td>
+  </tr>
+</table>
+</body>
+</html>

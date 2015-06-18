@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Caballo
+{% endblock %}
+
+{% block body %}
+    <h1>Hola Caballeros</h1>
+    <h2>Este es la vista resultante con el modelo del controlador del Caballo </h2>
+    <p><a href="{{path('abeja_show')}}">Desde aquí enlazo con la vista abeja!</a></p>
+    <div class="MVC"><span>Modelo, Vista, Controlador!!</span></div>
+    <div class="frame">
+    {{ render(controller('AppBundle:Abeja:show')) }}
+</div>
+    <style>
+ 		.MVC{
+ 			text-align: center;
+ 			color:darkred;
+ 			font-size:34px;
+ 		}
+ 		.frame{
+ 			border: 3px solid green;
+ 			width:80%;
+ 			margin:auto;
+ 		}
+ 	</style>
+
+{% endblock %}
+

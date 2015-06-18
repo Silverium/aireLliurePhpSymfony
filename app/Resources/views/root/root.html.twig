@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+<div id="container1" class="container-fluid">
+
+    <div id="actOut" style=" margin-top:50px; width: 262px; position:relative">
+        <h3 id="actOutText" style=" margin-bottom:0; padding-bottom:0; font-family: 'Arial Black'; color: white; font-weight: bolder;">
+            Activitats Outdoor
+        </h3>
+    </div>
+    <div>
+        <img id="ActMun" alt="Imatge d'activitat a la muntanya" class="img-responsive center-block"  src="{{ asset('img/frontals/inici.jpg') }}" />
+    </div>
+    <div class="rayaVerde" style=" background-color: #CCFF00; height:1vw">
+    </div>
+    <div id="ProperesActivitats" class="">
+        <div class="row">
+            <!--		TITOL DE LA SECCIÓ-->
+            <h3 class="col-sm-8" style='color:#CCFF00;'>Properes activitats</h3>
+            <!--		AQUÍ POSEM EL SCRIPT DE LA DATA-->
+            <p class="col-sm-4">
+                <script>  MostrarData(); </script>
+            </p>
+        </div>
+        <!--			SEPARADOR-->
+        <div class="rayaVerde" style=" background-color: #CCFF00; height:1vw"></div>
+
+    </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <div class="cuadriculado">
+
+        <div class="activitats">
+            <div class='bigtext'>
+                <b>Rogaine Altafulla - Baix Gaià</b>
+            </div>
+            <div>
+                <p class="pull-left">15 de Març 2014</p>
+                <p class="pull-right">Altafulla</p>
+            </div>
+            <p class="espacioVer">
+                <a href='{{ asset("http://www.rogainealtafulla.com", absolute=true) }}' target="_blank">
+                    <img alt="imatge de Rogaine activitats" class="recuadro" src='{{ asset("../img/noticies/23.jpg") }}' width="100%" /></a></p>
+            <div>
+                <p class="pull-left">Rogaine</p>
+                <p class="pull-right">Estat:
+                    <span class="red" style="font-weight: bold">inscripcions tancades</span></p>
+            </div>
+        </div>
+        <div class="activitats ">
+            <div class='bigtext'>
+                <b> Curses d´orientació, introducció</b>
+            </div>
+            <div>
+                <p class='pull-left'>11 de Gener 2014</p>
+                <p class="pull-right">Prades (Baix Camp)</p>
+            </div>
+            <p class="espacioVer">
+                <a href='{{ asset("events/sessioorientacio/index.htm") }}' target="_blank">
+                    <img alt="imatge del cartell de l'activitat" class="recuadro" src='{{ asset("img/noticies/22.gif" ) }}' width="100%" /></a></p>
+            <div>
+                <p class="pull-left">Orienteering</p>
+                <p class="pull-right">Estat:
+                    <span class="red" style="font-weight: bold">inscripcions tancades</span></p>
+            </div>
+        </div>
+    </div>
+    <!--		SEPARADOR-->
+    <div class="rayaVerde" style=" background-color: #CCFF00;  height:1vw"></div>
+{% endblock %}
+{% block footer %}
+    <div id="" class="container-fluid" style="">
+        <div class='row'>
+            <div id="" class=" col-sm-8" >
+                <h3>Aire Lliure - Activitats outdoor </h3>
+                <p><span class="letraPeq">Gestionem, de manera innovadora i creativa,
+						les activitats del teu club esportiu amb convicció d´èxit. La nostra
+						experiència avala eficiència i solidesa organitzativa. <br />
+						<br />
+						Orienteering | Trail running | MTB | Climbing | <br />
+						Multiactivites | Triathlon | Duathlon | Rogaining | Alpinism | Mountain
+						guide services <br />
+						Tourism | Travel</span></p>
+            </div>
+            <div class='col-sm-4' >
+                <div class='row cuadriculado' >
+                    <div style='margin:10px; display: inline;'>
+                        <a id="iconoFacebook" href='{{ asset("http://www.facebook.com/airelliure.page", absolute=true) }}' target="blank">
+                            <img alt="Faceb" class="rotando" height="35" src='{{ asset("img/logofacebook.gif") }}' width="35"></a>
+                    </div>
+                    <div style='margin:10px;display: inline;'>
+                        <a id="iconoFlickr" href="http://www.flickr.com/airelliurephotos" target="_blank">
+                            <img alt="Flickr" class="rotando" height="35" src='{{ asset("img/logoflickr.gif") }}' width="35"></a>
+                    </div>
+                    <div style='margin:10px; display: inline;'>
+                        <a id="iconoYoutube" href="{{ asset('http://www.youtube.com/user/AireLliureHD/videos', absolute=true) }}" target="_blank">
+                            <img alt="YouTube" class="rotando" height="35" src="{{ asset('img/logoyoutube.gif') }}" width="35"></a>
+                    </div>
+                </div>
+                <div class='row'  style='margin:20px;'>
+                    <div class='col-sm-12'>
+                        <script class=""  src="{{ asset('http://counter2.allfreecounter.com/private/counter.js?c=3214bac51bd79f4de1ad486a7b4bf816', absolute=true) }}" type="text/javascript"></script>
+                        <!--HIT COUNTER =>> CÓDIGO "ACCOUNT ID" = 3214bac51bd79f4de1ad486a7b4bf816 COUNTER = counter2	-->
+                        <br/>
+                        <a href="{{ asset('http://www.freecounterstat.com', absolute=true) }}" target="_Blank" title="hit counter">hit counter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="social" style="height: 200px; background-color:hsla(72, 100%, 50%, 0.4);">
+
+        <iframe allowtransparency="false"  class="center-block" frameborder="0" scrolling="no" src="{{ asset('//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fairelliure.page%3Fref%3Dhl&amp;width=860&amp;height=200&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false', absolute=true) }}" style="border: none; opacity: 1; overflow: hidden; width: 580px; height: 150px;">
+        </iframe>
+
+    </div>
+{% endblock %}
