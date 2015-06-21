@@ -1,0 +1,20 @@
+
+{% for event in events %}
+<div class="activitats">
+    <div class='bigtext'>
+        <b>{{ event.title }}</b>
+    </div>
+    <div>
+        <p class="pull-left">{{ event.day }}</p>
+        <p class="pull-right">{{ event.place }}</p>
+    </div>
+    <p class="espacioVer">
+        <a href='{{ event.link  }}' target="_blank">
+            <img alt="{{ event.imgAlt }}" class="recuadro" src='{{ event.imgSrc }}' width="100%" /></a></p>
+    <div>
+        <p class="pull-left">{{ event.organizer }}</p>
+        <p class="pull-right">Estat:
+            <span class="red" style="font-weight: bold">{{ event.state }}</span></p>
+    </div>
+</div>
+{% endfor %}

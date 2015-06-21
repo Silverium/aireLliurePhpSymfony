@@ -1,4 +1,5 @@
 {% extends 'base.html.twig' %}
+
 {% block header %}
 <div id="container1" class="container-fluid">
 
@@ -27,9 +28,41 @@
     </div>
     </div>
 {% endblock %}
+{% block navBar %}
+    <nav id="barraNav"  class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"  href=""><img  id="logoBarra2"  class="soslayando recuadro" height="30px"  alt="Aire Lliure" src="{{ asset('img/nouLogo.gif') }}" />
+                    <img  id="logoBarra"  style=" height:30px;" class="soslayando recuadro" height="30px"  alt="Aire Lliure" src="{{ asset('img/logodalt.gif') }}" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li id="navIndex"><a href="">Inici</a></li>
+                    <li id="navCalen"><a href="">Calendari</a></li>
+                    <li id="navArxiu"><a href="">Arxiu</a></li>
+                    <li id="navAireL"><a href="{{ asset('/caballo') }}">Aire Lliure</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href=""><img  alt="ES"src="{{ asset('img/es_off.png') }}" onmouseover=" this.src='{{ asset("img/es.png") }}'" onmouseout="this.src='{{ asset("img/es_off.png") }}'"/></a></li>
+                    <li><a><img alt="CAT" src="{{ asset('img/ca.png') }}"/></a></li>
+                </ul>
+            </div>
+        </div>
 
+
+    </nav>
+{% endblock %}
 {% block body %}
-    <div class="cuadriculado">
+
+
+    <div id="properesActivitats" class="cuadriculado">
+
+
 
         <div class="activitats">
             <div class='bigtext'>

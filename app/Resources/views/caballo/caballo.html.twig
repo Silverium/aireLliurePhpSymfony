@@ -5,6 +5,9 @@
 {% endblock %}
 
 {% block body %}
+    <div style="background: #ffffff;">
+        {{ render(controller('AppBundle:Events:show')) }}
+
     <h1>Hola Caballeros</h1>
     <h2>Este es la vista resultante con el modelo del controlador del Caballo </h2>
     <p><a href="{{path('abeja_show')}}">Desde aquí enlazo con la vista abeja!</a></p>
@@ -24,6 +27,6 @@
  			margin:auto;
  		}
  	</style>
-
+    </div>
 {% endblock %}
 
