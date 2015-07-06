@@ -9,3 +9,6 @@ abeja_show:
 caballo_show:
     path:      /caballo
     defaults:  { _controller: AppBundle:Caballo:show }
+root_create:
+    path:      /create
+    defaults:  { _controller: AppBundle:Root:create }

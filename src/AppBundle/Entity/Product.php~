@@ -1,0 +1,15 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: soldeplata
+ * Date: 5/07/15
+ * Time: 21:50
+ */
+namespace AppBundle\Entity;
+
+class Product
+{
+    protected $name;
+    protected $price;
+    protected $description;
+}
