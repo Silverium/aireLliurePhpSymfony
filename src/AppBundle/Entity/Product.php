@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 namespace AppBundle\Entity;
 
@@ -9,11 +10,27 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Product
 {
+=======
+/**
+ * Created by PhpStorm.
+ * User: soldeplata
+ * Date: 5/07/15
+ * Time: 21:50
+ */
+namespace AppBundle\Entity;
+
+class Product
+{
+    protected $name;
+    protected $price;
+    protected $description;
+>>>>>>> 191dafc35bd6d9f17e576ba7dc1487a229d5e963
     /**
      * @var integer
      */
     private $id;
 
+<<<<<<< HEAD
     /**
      * @var string
      */
@@ -29,6 +46,8 @@ class Product
      */
     private $description;
 
+=======
+>>>>>>> 191dafc35bd6d9f17e576ba7dc1487a229d5e963
 
     /**
      * Get id

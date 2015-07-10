@@ -1,5 +1,6 @@
 AppBundle\Entity\Product:
     type: entity
+<<<<<<< HEAD
     table: null
     id:
         id:
@@ -16,3 +17,19 @@ AppBundle\Entity\Product:
         description:
             type: text
     lifecycleCallbacks: {  }
+=======
+    table: product
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 100
+        price:
+            type: decimal
+            scale: 2
+        description:
+            type: text
+>>>>>>> 191dafc35bd6d9f17e576ba7dc1487a229d5e963

@@ -62,42 +62,7 @@
 
     <div id="properesActivitats" class="cuadriculado">
 
-
-
-        <div class="activitats">
-            <div class='bigtext'>
-                <b>Rogaine Altafulla - Baix Gaià</b>
-            </div>
-            <div>
-                <p class="pull-left">15 de Març 2014</p>
-                <p class="pull-right">Altafulla</p>
-            </div>
-            <p class="espacioVer">
-                <a href='{{ asset("http://www.rogainealtafulla.com", absolute=true) }}' target="_blank">
-                    <img alt="imatge de Rogaine activitats" class="recuadro" src='{{ asset("../img/noticies/23.jpg") }}' width="100%" /></a></p>
-            <div>
-                <p class="pull-left">Rogaine</p>
-                <p class="pull-right">Estat:
-                    <span class="red" style="font-weight: bold">inscripcions tancades</span></p>
-            </div>
-        </div>
-        <div class="activitats ">
-            <div class='bigtext'>
-                <b> Curses d´orientació, introducció</b>
-            </div>
-            <div>
-                <p class='pull-left'>11 de Gener 2014</p>
-                <p class="pull-right">Prades (Baix Camp)</p>
-            </div>
-            <p class="espacioVer">
-                <a href='{{ asset("events/sessioorientacio/index.htm") }}' target="_blank">
-                    <img alt="imatge del cartell de l'activitat" class="recuadro" src='{{ asset("img/noticies/22.gif" ) }}' width="100%" /></a></p>
-            <div>
-                <p class="pull-left">Orienteering</p>
-                <p class="pull-right">Estat:
-                    <span class="red" style="font-weight: bold">inscripcions tancades</span></p>
-            </div>
-        </div>
+        {{ render(controller('AppBundle:Events:show')) }}
     </div>
     <!--		SEPARADOR-->
     <div class="rayaVerde" style=" background-color: #CCFF00;  height:1vw"></div>
