@@ -1,0 +1,37 @@
+AppBundle\Entity\competition:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        place:
+            type: string
+            length: '100'
+        title:
+            type: string
+            length: 255
+        inscriptable:
+            type: boolean
+        date:
+            type: date
+        time:
+            type: time
+        imgLink:
+            type: string
+            length: 255
+        organizer:
+            type: string
+            length: '100'
+        cost:
+            type: float
+        prize:
+            type: string
+            length: 255
+        inscrLink:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

@@ -9,3 +9,6 @@ abeja_show:
 caballo_show:
     path:      /caballo
     defaults:  { _controller: AppBundle:Caballo:show }
+competitionCreator_show:
+    path:       /crearEvento
+    defaults:   { _controller:  AppBundle:CompetitionCreator:show}
