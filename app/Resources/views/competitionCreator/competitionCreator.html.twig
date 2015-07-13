@@ -1,10 +1,25 @@
 {% extends 'base.html.twig' %}
+{% block title %}
+    Crear evento
+{% endblock %}
 {% block body %}
-<form>
-    <input type="text" name="place" title="Lugar de la competición"/>
-    <input type="date" name="date" title="Fecha de la competición"/>
-    <input type="text" name="place" title="Lugar de la competición"/>
-    <input
-</form>
-    
+
+    <div id="competitionCreator">
+        <h2>Creación de un nuevo evento</h2>
+        <form name="competition" method="post">
+            <label name="place">Lugar</label>   <input type="text" name="place" title="Lugar de la competición"/>
+            <label name="date">Fecha</label>    <input type="date" name="date" title="Fecha de la competición"/>
+            <label name="time">Hora de inicio</label>   <input type="datetime" name="time" title="Hora de inicio de la competición"/>
+            <label name="organizer">Organizador</label>  <input type="text" name="organizer" title="Organizador de la competición"/>
+            <label name="title">Título</label>  <input type="text" name="title" title="Título de la competición"/>
+            <label name="imgLink">Enlace a la imagen</label>  <input type="text" name="imgLink" title="Enlace a la imagen que representa el cartel de la competición"/>
+            <label name="cost">Precio</label>  <input type="number" name="cost" title="Precio de la inscripción a la competición"/>
+            <label name="inscrLink">Enlace a la página de inscripción</label>  <input type="text" name="inscrLink" title="Enlace a la página de inscripción de la competición"/>
+
+            <label name="prize">Premios</label>  <input type="text" name="prize" title="Premios de la competición"/>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+
 {% endblock %}

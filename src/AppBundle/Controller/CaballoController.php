@@ -13,4 +13,5 @@ class CaballoController extends Controller
 
         return $this->render('caballo/caballo.html.twig');
     }
+
 }

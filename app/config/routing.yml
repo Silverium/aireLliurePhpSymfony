@@ -9,12 +9,17 @@ abeja_show:
 caballo_show:
     path:      /caballo
     defaults:  { _controller: AppBundle:Caballo:show }
-<<<<<<< HEAD
 competitionCreator_show:
     path:       /crearEvento
     defaults:   { _controller:  AppBundle:CompetitionCreator:show}
-=======
 root_create:
     path:      /create
     defaults:  { _controller: AppBundle:Root:create }
->>>>>>> 191dafc35bd6d9f17e576ba7dc1487a229d5e963
+default_new:
+     path:      /new
+     defaults:  { _controller: AppBundle:Default:new }
+task_success:
+    path:   /done
+    defaults:   { _controller: AppBundle:Default:done}
+
+
