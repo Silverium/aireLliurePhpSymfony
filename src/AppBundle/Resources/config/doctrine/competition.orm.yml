@@ -16,6 +16,7 @@ AppBundle\Entity\competition:
             length: 255
         inscriptable:
             type: boolean
+            nullable: TRUE
         date:
             type: date
         time:
